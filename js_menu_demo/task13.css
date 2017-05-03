@@ -1,0 +1,72 @@
+*{
+	font-family: "Microsoft Yahei";
+	vertical-align: middle;
+}
+
+
+.nodebody-visible{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	margin: 5px 15px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.nodebody-unvisible{
+	display: none;
+}
+
+.arrow{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.right-arrow{
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid black;
+}
+
+.down-arrow{
+	width: 0;
+	height: 0;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-top: 10px solid black;  
+}
+
+.empty-arrow{
+	width: 0;
+	height: 0;
+	border-right: 10px solid transparent;
+}
+
+.node-title{
+	color: #6898c2;
+	margin-right: 6px;
+}
+
+.highLight{
+	color: blue;
+}
+
+.node-title:hover{
+	color: blue;
+}
+
+.addIcon, .deleteIcon{
+	display: none;
+}
+
+.addIcon:hover, .deleteIcon:hover{
+	cursor: pointer;
+}
+
+.node-header:hover>.addIcon, .node-header:hover>.deleteIcon{
+	display: inline;
+}

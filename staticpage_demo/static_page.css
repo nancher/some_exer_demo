@@ -1,0 +1,844 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+}
+
+body{
+	min-width: 1280px;
+}
+
+text{
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+p{
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+/* 顶栏部分 */
+.top-bar{
+	position: relative;
+	width: 100%;
+	height: 57px;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	float: left;
+	padding-left: 59px;
+	font-size: 1.3em;
+	font-weight: 590;
+}
+
+.logo img{
+	margin-right: 10px;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	float: right;
+	width: 53%;
+}
+
+.nav span{
+	padding: 0 15px;
+	padding-bottom: 10px;
+	height: 100%;
+}
+
+.nav span:hover{
+	cursor: pointer;
+	color: rgb(231, 79, 77);
+}
+
+
+
+.login{
+	display: flex;
+	align-items: center;
+	padding-right: 63px; 
+	float: right;
+	color: rgb(231, 79, 77);
+}
+
+.login:hover{
+	cursor: pointer;
+}
+
+.login img{
+	margin-right: -3px;
+}
+
+.login span:hover{
+	border: none;
+}
+
+.bottom_border{
+	position: absolute;
+	width: 5.8%;
+	height: 3px;
+	left: 46.4%;
+	bottom: 0;
+	background-color: rgb(231, 79, 77);
+	transition: left .5s;
+}
+
+#item2:hover~div.bottom_border{
+	left: 54.3%;
+}
+
+#item3:hover~div.bottom_border{
+	left: 63.4%;
+}
+
+#item4:hover~div.bottom_border{
+	left: 72.4%;
+}
+
+#item5:hover~div.bottom_border{
+	left: 81.5%;
+}
+
+/* 页面内容部分 */
+
+.content-1{
+	position: relative;
+	height: 700px;
+	width: 100%;
+	background-image: url("images/content1.png");
+	background-size: cover;
+}
+
+.content-1 div{
+	position: absolute;
+	left: 116px;
+	top: 230px;
+	color: white;
+}
+
+.content-1 div p.title{
+	font-size: 3.0em;
+}
+
+.content-1 div p.content{
+	font-size: 1.2em;
+	font-weight: lighter;
+	line-height: 1.8em;
+	margin-left: 8px;
+	margin-top: 15px;
+}
+
+.content-1 div button{
+	display: none;
+}
+
+.content-1 div label{
+	display: flex;
+	cursor: pointer;
+	width: 330px;
+	height: 55px;
+	margin-top: 65px;
+	margin-left: 8px;
+	background-color: rgb(231, 79, 77);
+}
+
+.content-1 div label span{
+	margin: auto;
+	font-size: 1.7em;
+	font-weight: lighter;
+	letter-spacing: 6px;
+}
+
+.content-2{
+	height: 240px;
+	width: 100%;
+}
+
+.content-2 div.pic{
+	display: flex;
+	height: 130px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.content-2 div.content{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	text-align: center;
+	color: gray;
+}
+
+.content-2 div.content div{
+	width: 25%;
+	border-right: 1px solid gray;
+}
+
+.content-2 div.content #last{
+	border: none;
+}
+
+
+.content-3{
+	display: flex;
+	height: 350px;
+	width: 100%;
+	background-color: rgb(236, 236, 236);
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.content-3 img{
+	display: block;
+	margin-top: 20px;
+}
+
+.content-3 p{
+	font-size: 3em;
+	letter-spacing: 4px;
+	color: gray;
+	margin-top: -120px;
+}
+
+.content-4{
+	position: relative;
+	height: 340px;
+	width: 100%;
+	background-image: url("images/content4.png");
+	background-size: cover;
+}
+
+.content-4 div.intro{
+	display: flex;
+	height: 50%;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content-4 div.intro #intro-1{
+	font-size: 1.4em;
+	color: white;
+	margin-top: 50px;
+}
+
+.content-4 div.intro div.line{
+	width: 30px;
+	height: 2px;
+	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.content-4 div.intro #intro-2{
+	font-size: 0.9em;
+	color: rgb(230, 230, 230);
+}
+
+.content-4 form label:hover{
+	cursor: pointer;
+}
+
+.content-4 form #country-label{
+	float: left;
+	display: block;
+	width: 230px;
+	height: 36px;
+	border: none;
+	background-color: #fff;
+	background-image: url("images/select.png");
+	background-repeat: no-repeat;
+	background-position: 205px;
+	margin-left: 126px;
+}
+
+.content-4 form label span{
+	display: inline-block;
+	margin-top: 8px;
+	margin-left: 15px;
+	color: gray;
+	font-size: .9em;
+}
+
+.content-4 form input{
+	display: none;
+}
+
+.content-4 form ul:hover{
+	cursor: pointer;
+}
+
+.content-4 form #country-ul{
+	clear: left;
+	float: left;
+	display: none;
+	background-color: rgb(230, 230, 230);
+	width: 230px;
+	margin-left: 126px;
+	padding: 0 0;
+}
+
+.content-4 form ul li{
+	list-style: none;
+	padding: 5px;
+	padding-left: 30px;
+	font-size: .8em;
+}
+
+.content-4 form ul li.last{
+	padding-bottom: 10px;
+}
+
+.content-4 form ul li:hover{
+	background-color: rgb(190, 78, 72);
+	background-image: url("images/option.png");
+	background-repeat: no-repeat;
+	background-position: 6px 8px;
+	color: white;
+	cursor: pointer;
+}
+
+.content-4 form #province-label{
+	float: left;
+	display: block;
+	width: 230px;
+	height: 36px;
+	border: none;
+	background-color: #fff;
+	background-image: url("images/select.png");
+	background-repeat: no-repeat;
+	background-position: 205px;
+	margin-left: 50px;
+}
+
+.content-4 form #province-ul{
+	display: none;
+	position: absolute;
+	left: 406px;
+	top: 205px;
+	background-color: rgb(230, 230, 230);
+	width: 230px;
+	padding: 0 0;
+}
+
+.content-4 form #city-label{
+	float: left;
+	display: block;
+	width: 230px;
+	height: 36px;
+	border: none;
+	background-color: #fff;
+	background-image: url("images/select.png");
+	background-repeat: no-repeat;
+	background-position: 205px;
+	margin-left: 50px;
+}
+
+.content-4 form #saerch{
+	display: none;
+}
+
+.content-4 form #forSearch{
+	float: left;
+	display: flex;
+	width: 217px;
+	height: 36px;
+	background-color: rgb(190, 78,72);
+	margin-left: 50px;
+	align-items: center;
+	justify-content: center;
+	padding-left: 13px;
+	letter-spacing: 26px;
+	color: #fff;
+}
+
+.content-5{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 600px;
+	width: 100%;
+	background-color: rgb(248, 248, 248);
+}
+
+.content-5 div div.img{
+	background-color: #fff;
+	padding: 10px 8px;
+	border: 1px solid rgb(210, 210, 210);
+}
+
+.content-5 div div.img img:hover{
+	cursor: pointer;
+}
+
+.content-5 div span{
+	display: block;
+	text-align: center;
+}
+
+.content-5 div span.bottom-large{
+	padding-top: 10px;
+	font-size: .95em;
+}
+
+.content-5 div span.top-large{
+	display: flex;
+	font-size: 1.3em;
+	justify-content: space-around;
+}
+
+.content-5 div span.small{
+	margin: 5px 0;
+	font-size: .8em;
+	color: rgb(170, 170, 170);
+}
+
+.content-6{
+	height: 570px;
+	width: 100%;
+}
+
+.content-6 div.newworld-beijing{
+	float: left;
+	position: relative;
+	display: flex;
+	width: 66.66%;
+	height: 100%;
+	background-image: url("images/beijing.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content-6 div.newworld-beijing div.intro{
+	margin: auto;
+	color: #fff;
+}
+
+.content-6 div.newworld-beijing div.intro span{
+	display: block;
+	text-align: center;
+}
+
+.content-6 div.newworld-beijing div.intro span.one{
+	font-size: 3em;
+}
+
+.content-6 div.newworld-beijing div.intro span.two{
+	margin-top: -40px;
+	margin-bottom: -10px;
+	font-size: 10em;
+}
+
+.content-6 div.newworld-beijing div.intro span.three{
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.content-6 div.newworld-beijing div.intro span.four{
+	margin-left:-30px;
+	font-size: 1.3em;
+}
+
+.content-6 div.newworld-beijing div.arrow{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 15px 25px 15px 0px;
+	border-color: transparent #fff transparent transparent;
+	border-style: solid;
+	top: 50%;
+	right: 0;
+}
+
+.content-6 div.newworld-intro{
+	float: left;
+	width: 33.33%;
+	height: 100%;
+	display: flex;
+}
+
+.content-6 div.newworld-intro > div{
+	width: 60%;
+	margin: auto;
+}
+
+.content-6 div.newworld-intro > div div.content div.title{
+	margin: 20px;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.content-6 div.newworld-intro > div div.content div.title > span{
+	color: rgb(231, 80, 77);
+}
+
+.content-6 div.newworld-intro > div div.content p{
+	font-size: .8em;
+	line-height: 2.8em;
+	color: rgb(170, 170, 170);
+}
+
+.content-6 div.newworld-intro > div div.content button{
+	display: none;
+}
+
+.content-6 div.newworld-intro > div div.content label{
+	cursor: pointer;
+	display: block;
+	width: 100px;
+	height: 26px;
+	border: 1px solid rgb(231, 123, 126);
+	color: rgb(231, 123, 126);
+	text-align: center;
+	padding-top: 4px;
+	margin-top: 50px;
+	margin-left: 92px;
+}
+
+.content-6 div.newworld-intro > div div.control{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.content-6 div.newworld-intro > div div.control input{
+	display: none;
+}
+
+.content-6 div.newworld-intro > div div.control label span{
+	cursor: pointer;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid rgb(170, 170, 170);
+	margin-left: 15px;
+}
+
+.content-6 div.newworld-intro > div div.control #first:checked+label::after{
+	position: absolute;
+	left: 40.6%;
+	top: 5px;
+	content: '\a0';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgb(170, 170, 170);
+}
+
+.content-6 div.newworld-intro > div div.control #second:checked+label::after{
+	position: absolute;
+	left: 51%;
+	top: 5px;
+	content: '\a0';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgb(170, 170, 170);
+}
+
+.content-6 div.newworld-intro > div div.control #third:checked+label::after{
+	position: absolute;
+	left: 60.8%;
+	top: 5px;
+	content: '\a0';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgb(170, 170, 170);
+}
+
+.content-7{
+	width: 100%;
+	height: 520px;
+}
+
+.content-7 div{
+	width: 33.33%;
+	height: 100%;
+	float: left;
+}
+
+.content-7 div.left{
+	background-color: rgb(231, 79, 77);
+}
+
+.content-7 div.right{
+	background-image: url("images/content7.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content-7 > div{
+	display: flex;
+}
+
+.content-7 > div > div{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.content-7 > div > div > p{
+	width: 170px;
+	font-size: 1.3em;
+}
+
+.content-7 > div > div > button{
+	display: none;
+}
+
+.content-7 > div > div > label{
+	cursor: pointer;
+	display: block;
+	padding-top: 8px;
+	width: 170px;
+	height: 37px;
+	font-size: 1.3em;
+}
+
+.content-7 > div > div div.devide{
+	height: 0;
+	width: 30px;
+	margin: 30px 0;
+}
+
+.content-7 > div.left{
+	color: #fff;
+}
+
+.content-7 > div.left > div div.devide{
+	border-top: 2px solid #fff;
+}
+
+.content-7 > div.left > div label{
+	border: 1px solid #fff;
+}
+
+.content-7 > div.middle > div div.devide{
+	border-top: 2px solid #000;
+}
+
+.content-7 > div.middle > div label{
+	color: rgb(231, 79, 71);
+	border: 1px solid rgb(231, 79, 71);
+}
+
+.join-us{
+	height: 760px;
+	width: 100%;
+}
+
+.join-us div.employ{
+	height: 300px;
+	width: 100%;
+	display: flex;
+}
+
+.join-us div.employ > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+}
+
+.join-us div.employ > div p.title{
+	font-size: 1.3em;
+	letter-spacing: .1em;
+}
+
+.join-us div.employ > div div.devide{
+	height: 0;
+	width: 30px;
+	border-top: 2px solid rgb(231, 79, 71);
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.join-us div.employ > div p.intro{
+	font-size: .9em;
+	color: rgb(170, 170, 170);
+}
+
+.join-us div.info > div{
+	float: left;
+}
+
+.join-us div.info div.clause{
+	width: 40%;
+	height: 100%;
+}
+
+.join-us div.info div.clause div{
+	padding-left: 20%;
+	padding-right: 15%;
+}
+
+.join-us div.info div.clause div h4{
+	margin-bottom: 25px;
+	color: rgb(80, 80, 80);
+}
+
+.join-us div.info div.clause div p{
+	font-size: .9em;
+	color: rgb(130, 130, 130);
+}
+
+.join-us div.info div.clause div button{
+	display: none;
+}
+
+.join-us div.info div.clause div label{
+	cursor: pointer;
+	display: block;
+	padding-left: 88%;
+	margin-bottom: 40px;
+	font-size: .6em;
+	color: rgb(130, 130, 130);
+	background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: 290px 7px;
+}
+
+.join-us div.form{
+	width: 60%;
+	height: 100%;
+}
+
+.join-us div.form form input{
+	outline: none;
+	border: none;
+	width: 290px;
+	height: 40px;
+	padding-left: 20px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+	background-color: rgb(237, 237, 237);
+	color: black;
+}
+
+.join-us div.form form textarea{
+	outline: none;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-top: 10px;
+	height: 150px;
+	width: 638px;
+	border: none;
+	background-color: rgb(237, 237, 237);
+	color: black;
+	resize: none;
+}
+
+.join-us div.form form button{
+	cursor: pointer;
+	width: 638px;
+	height: 40px;
+	margin-top: 20px;
+	border: none;
+	outline: none;
+	color: rgb(150, 150, 150);
+	font-size: 1em;
+}
+
+.contact-us{
+	height: 385px;
+	width: 100%;
+	background-color: rgb(50, 53, 62);
+}
+
+.contact-us > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.contact-us > div p.title{
+	color: rgb(240, 240, 240);
+	font-size: 1.3em;
+	margin-top: 100px;
+	margin-bottom: 10px; 
+}
+
+.contact-us > div p.content{
+	color: rgb(220, 220, 220);
+	font-size: .8em;
+	line-height: 1.8em;
+	margin-bottom: 30px;
+}
+
+.contact-us > div > div.email{
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.contact-us > div > div.email input{
+	width: 410px;
+	border: none;
+	outline: none;
+	height: 40px;
+	padding-left: 20px;
+}
+
+.contact-us > div > div.email button{
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+	background-color: rgb(111, 124, 120);
+	border: none;
+	outline: none;
+	margin-left: -5px;
+	font-size: 17px;
+	letter-spacing: 5px;
+	color: rgb(230, 230, 230);
+}
+
+.contact-us > div > div.contact-tool img{
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.footer{
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(48, 48, 57);
+	padding-top: 30px;
+	padding-left: 100px;
+	font-size: .8em;
+	color: rgb(170, 170, 170);
+}
+
+.footer a{
+	position: absolute;
+	text-decoration: none;
+	color: rgb(230, 230, 230);
+	right: 50px;
+	top: 30px;
+}
